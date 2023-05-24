@@ -1,0 +1,14 @@
+httpx==0.24.1
+alembic==1.11.0
+asyncpg==0.27.0
+fastapi==0.95.2
+pydantic==1.10.7
+ffmpeg==1.4
+python-dotenv==1.0.0
+SQLAlchemy==2.0.13
+uvicorn==0.22.0
+python-jose==3.3.0
+python-multipart==0.0.6
+pydub==0.25.1
+pytest==7.3.1
+pytest-asyncio==0.21.0
