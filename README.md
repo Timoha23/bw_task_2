@@ -119,7 +119,7 @@ ___
      [1]: https://imageup.ru/img300/4350678/bw2_create_user.jpg
      </details>
 
-1. Добавление аудиозаписи
+2. Добавление аудиозаписи
    * Endpoint: **host:port/record/**
    * Method: **POST**
    * Params: 
@@ -167,7 +167,7 @@ ___
      
      </details> 
 
-2. Получение аудиозаписи
+3. Получение аудиозаписи
    * Endpoint: **host:port/record/**
    * Method: **GET**
    * Params: 

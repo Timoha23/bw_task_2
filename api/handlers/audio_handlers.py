@@ -16,6 +16,7 @@ from db.models import User
 from db.session import get_db
 from settings import UPLOAD_FILES_PATH
 
+
 audio_router = APIRouter()
 
 
@@ -31,7 +32,7 @@ async def post_audio(
     Добавление аудиозаписи
     """
 
-    user_obj = await get_user_by_uuid(user, session)
+    user_obj = await get_user_by_uuid(user_id=user, session=session)
     # если юзер с данным uuid не найден райзим исключение
     if user_obj is None:
         raise HTTPException(
@@ -58,7 +59,7 @@ async def post_audio(
     full_path = f"{upload_path}/{file.filename}"
 
     # проверяем существует ли файл с данным именем. Если да,
-    # то присваиваем новое имя содержащее номер
+    # то присваиваем новое имя содержащее порядковый номер
     counter = 0
     while True:
         if counter == 0:
@@ -123,7 +124,6 @@ async def get_audio(
             detail="Файл с данными параметрами не найден."
         )
 
-    # предоставление аудио
     file_path = f"{UPLOAD_FILES_PATH}/{user}/{audio.filename}"
 
     # проверяем существует ли возвращаемый файл

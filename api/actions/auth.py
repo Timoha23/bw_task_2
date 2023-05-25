@@ -36,7 +36,7 @@ async def get_current_user(
     except JWTError:
         raise exception
 
-    user = await get_user_by_uuid(user_id, session)
+    user = await get_user_by_uuid(user_id=user_id, session=session)
     if user is None:
         raise exception
     return user

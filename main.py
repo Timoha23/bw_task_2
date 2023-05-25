@@ -4,6 +4,7 @@ from fastapi import APIRouter, FastAPI
 from api.handlers.audio_handlers import audio_router
 from api.handlers.user_handlers import user_router
 
+
 app = FastAPI(title="Bewise_task_2")
 
 main_api_router = APIRouter()

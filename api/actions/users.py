@@ -17,7 +17,6 @@ async def create_new_user(body: UserCreate, session: AsyncSession) -> User:
             username=body.username,
         )
         session.add(user)
-        await session.commit()
         return user
 
 

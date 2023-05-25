@@ -24,7 +24,6 @@ async def upload_audio_file(
             owner_id=owner_id,
         )
         session.add(audio)
-        await session.commit()
         return audio
 
 

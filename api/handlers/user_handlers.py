@@ -6,6 +6,7 @@ from api.schemas import GetToken, UserCreate
 from db.session import get_db
 from security import create_access_token
 
+
 user_router = APIRouter()
 
 
@@ -18,7 +19,7 @@ async def create_user(
     Создание юзера
     """
 
-    user = await create_new_user(body, session)
+    user = await create_new_user(body=body, session=session)
     # так как токен получаем только при регистрации,
     # сделаем его без срока действия (бесконечным)
     access_token = create_access_token(
