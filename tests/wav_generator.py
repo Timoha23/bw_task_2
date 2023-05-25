@@ -66,6 +66,7 @@ def create_wav() -> str:
     bg.append_silence()
     bg.append_sinewave(volume=0.5, duration_milliseconds=700)
     bg.append_silence()
-    path_to_save = os.path.join(os.path.abspath(os.path.dirname(__file__)), filename)
+    path_to_save = os.path.join(os.path.abspath(os.path.dirname(__file__)),
+                                filename)
     bg.save_wav(path_to_save)
     return path_to_save

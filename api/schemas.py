@@ -4,6 +4,7 @@ import uuid
 from fastapi import HTTPException
 from pydantic import BaseModel, validator
 
+
 USERNAME_PATTERN = re.compile(r"^[a-zA-Z0-9]+$")
 
 

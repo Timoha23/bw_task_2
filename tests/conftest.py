@@ -15,6 +15,7 @@ from security import create_access_token
 from settings import TEST_DATABASE_URL
 from tests.wav_generator import create_wav
 
+
 engine_test = create_async_engine(TEST_DATABASE_URL)
 
 async_session_test = sessionmaker(
