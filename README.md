@@ -129,7 +129,7 @@ ___
       }
       ```
    * Files:
-      ```json
+      ```
       {
           "file": ("<filename>", <wav_file>, "audio/wav")
       }
