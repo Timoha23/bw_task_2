@@ -160,4 +160,3 @@ cython_debug/
 #.idea/
 upload_files/*
 test_mp3
-migrations/versions/*
