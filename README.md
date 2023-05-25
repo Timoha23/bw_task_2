@@ -54,7 +54,7 @@ ___
 
 1. Клонируем репозиторий:
    ```bash
-   git clone https://github.com/Timoha23/bewise_task_2.git
+   git clone https://github.com/Timoha23/bw_task_2.git
    ```
 
 2. Создаем .env файл и заполняем в соответствии с примером (.env.example).
